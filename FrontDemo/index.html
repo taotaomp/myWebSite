@@ -11,10 +11,35 @@
 		<script type="text/javascript" src="js/bootstrap.js"></script>
 		
 		<meta charset="utf-8" />
-		<title>It's hard to say PApudding</title>
+		<title>okey?</title>
 
 		<style type="text/css">
-		
+			#container{
+				background-image: url(img/background3.jpg);
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			
+			.jumbotron{
+				background-image: url(img/jumbotron1.jpg);
+				background-size: cover;
+			}
+			.jumbotron h1{
+				font-family: "楷体";
+			}
+			
+			#selfIntroduce{
+				background-image: url(img/background1.jpg);
+			}
+			#articleEntrance{
+				background-image: url(img/background4.png);
+				background-size: cover;
+			}
+			#traceDramaEntrance{
+				background-image: url(img/background3.jpg);
+			}
+			
+			
 		</style>
 	</head>
 	<body>
@@ -23,12 +48,136 @@
         	时间：2019-06-18
         	描述：导航条
         -->
+        <nav class="navbar navbar-default" style="margin: 0 auto;">
+        	<div class="container-fluid">
+        		<!-- Brand and toggle get grouped for better mobile display -->
+        		<div class="navbar-header">
+        			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+	        			<span class="icon-bar"></span>
+			        	<span class="icon-bar"></span>
+			        	<span class="icon-bar"></span>
+        			</button>
+        			<a class="navbar-brand" href="#" style="padding: 0px;">
+        				<img src="img/myRabbit.jpg" width="50px"/>
+        			</a>
+        			<p class="navbar-text visible-xs" align="right">
+        				Welcome to PApudding's Page.
+        			</p>
+        			
+        		</div>
+        		
+        		<!-- Collect the nav links, forms, and other content for toggling -->
+        		<div class="collapse navbar-collapse" id="navbar-collapse">
+        			<ul class="nav navbar-nav">
+        				<li class="active"><a href="#">主页</a></li>
+        				<li class=""><a href="#">文章</a></li>
+        				<li class="dropdown">
+        					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">应用<span class="caret"></span></a>
+	        				<ul class="dropdown-menu" role="menu">
+					            <li><a href="#">番剧追踪</a></li>
+					        </ul>
+        				</li>
+        				<li><a href="#">代码仓库</a></li>
+        			</ul>
+        			<ul class="nav navbar-nav navbar-right visible-lg visible-md visible-sm">
+        				<li id="today"><a disabled="true"><script>$("#today a").html(new Date().toDateString())</script></a></li>
+        				<li><a disabled="true">Welcome to PApudding's Page.</a></li>
+        			</ul>
+        		</div>
+        	</div>
+        </nav>
+        <!--
+        	作者：PApudding
+        	时间：2019-06-18
+        	描述：巨幕
+        -->
+        <div class="jumbotron">
+		  	<h1 class="col-lg-offset-1">
+		  		<b>
+			  		提高自身知识水平，
+			  		<br />&nbsp;&nbsp;&nbsp;&nbsp;
+			  		&nbsp;&nbsp;&nbsp;&nbsp;
+			  		&nbsp;&nbsp;&nbsp;&nbsp;
+			  		争做社会有用人才。
+		  		</b>
+		  	</h1>
+			<!--
+				<p align="right"><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+			-->
+		</div>
+		
+		
+		<!--
+        	作者：PApudding
+        	时间：2019-07-04
+        	描述：容器
+        -->
 		<div id="container">
-			<div id="row">
-				<div class="col-xs-1 col-md-1" style="background-color: yellow;">
-					sf
+			<!--
+            	作者：PApudding
+            	时间：2019-07-04
+            	描述：快捷入口
+            -->
+			<div class="row">
+				<div class="col-sm-4 col-md-4">
+					<div class="thumbnail" id="selfIntroduce">
+						<img src="img/KDY.png" alt="个人简介？？？" width="200px">
+						<div class="caption">
+							<h3>个人简介？</h3>
+							<p>你想知道我是谁吗嘻嘻嘻...</p>
+							<p align="right">
+								<a href="#" class="btn btn-success" role="button">点我进入</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-sm-4 col-md-4">
+					<div class="thumbnail" id="articleEntrance">
+						<img src="img/articleHead.png" alt="文章列表" width="200px">
+						<div class="caption">
+							<h3>快捷入口：文章列表</h3>
+							<p>没事的时候就喜欢写写骚东西，给力噢</p>
+							<p align="right">
+								<a href="#" class="btn btn-primary" role="button">点我进入</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-sm-4 col-md-4">
+					<div class="thumbnail" id="traceDramaEntrance">
+						<img src="img/zhvuifan.png" alt="追番管理" width="200px">
+						<div class="caption">
+							<h3>快捷入口：追番管理</h3>
+							<p>又追番？啧！死宅真恶心！</p>
+							<p align="right">
+								<a href="#" class="btn btn-info" role="button">点我进入</a>
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
+			<!--
+            	作者：PApudding
+            	时间：2019-07-04
+            	描述：留言
+            
+			<div class="row">
+				<div class="media">
+					 <div class="media-left">
+					    <a href="#">
+					      <img class="media-object" src="..." alt="...">
+					    </a>
+					  </div>
+					  <div class="media-body">
+					    <h4 class="media-heading">Media heading</h4>
+					    ...
+					  </div>
+					</div>
+			</div>
+			-->
 		</div>
+		
 	</body>
 </html>
