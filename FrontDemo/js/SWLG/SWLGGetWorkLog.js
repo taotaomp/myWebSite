@@ -20,7 +20,6 @@ $(document).ready(function(){
             newTr.append(newTd5);
 
             $("#workLogContainer").append(newTr);
-
         });
     });
 

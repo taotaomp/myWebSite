@@ -27,7 +27,13 @@ $(document).ready(function(){
    //          jsonpCallback: "handleResponse",
 			contentType :"application/json",
 			success: function(result){
-				alert(result);
+				if(result==true){
+					alert("保存成功！");
+					window.location.replace("SimpleWorkGenerator.html");
+				}else {
+					alert("保存失败！请检查是否认证");
+				}
+
 			}
 		})
 	});
