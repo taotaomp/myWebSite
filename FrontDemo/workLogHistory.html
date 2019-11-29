@@ -70,6 +70,15 @@
                     <li role="presentation" class=""><a href="SimpleWorkGenerator.html">日志生成</a></li>
                     <li role="presentation" class="active"><a href="workLogHistory.html">历史日志</a></li>
                     <li role="presentation"><a href="#">数据更改</a></li>
+                    <li role="presentation">
+                        <form class="form-inline" id="authorityForm">
+                            <div class="form-group">
+                                <input id="authorityInput" width="150px" type="text" class="form-control" placeholder="认证口令">
+                            </div>
+                            <span id="authorityFormsubmit" class="btn btn-info">认证</span>
+                        </form>
+                    </li>
+                    <li role="presentation"><a href="#" id="expireAuthority">废除认证</a></li>
                 </ul>
             </div>
         </div>
@@ -115,5 +124,6 @@
 <script>$("#today a").html(new Date().toDateString())</script>
 <script src="./js/SWLG/SWLGBasic.js"></script>
 <script src="./js/SWLG/SWLGGetWorkLog.js"></script>
+<script src="./js/SWLG/SWLGAuthority.js"></script>
 </body>
 </html>

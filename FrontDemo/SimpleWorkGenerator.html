@@ -54,7 +54,6 @@
             </ul>
             <ul class="nav navbar-nav navbar-right visible-lg visible-md visible-sm">
                 <li id="today"><a disabled="true">
-
                 </a></li>
                 <li><a disabled="true">Welcome to PApudding's Page.</a></li>
             </ul>
@@ -70,6 +69,15 @@
                     <li role="presentation" class="active"><a href="SimpleWorkGenerator.html">日志生成</a></li>
                     <li role="presentation"><a href="workLogHistory.html">历史日志</a></li>
                     <li role="presentation"><a href="#">数据更改</a></li>
+                    <li role="presentation">
+                        <form class="form-inline" id="authorityForm">
+                            <div class="form-group">
+                                <input id="authorityInput" width="150px" type="text" class="form-control" placeholder="认证口令">
+                            </div>
+                            <span id="authorityFormsubmit" class="btn btn-info">认证</span>
+                        </form>
+                    </li>
+                    <li role="presentation"><a href="#" id="expireAuthority">废除认证</a></li>
                 </ul>
             </div>
         </div>
@@ -162,7 +170,7 @@
                             <!--生成日志-->
                             <span id="generate" class="btn btn-info">生成日志</span>
                             <!--保存日志-->
-                                <span id="submit" class="btn btn-success">保存日志</button>
+                                <span id="submit" class="btn btn-success">保存日志</span>
                         </div>
                         <!--保存日志-->
                         <!-- <div class="col-sm-3">
@@ -187,5 +195,6 @@
 <script src="./js/SWLG/SWLGWorkLogGenerator.js"></script>
 <script src="./js/SWLG/SWLGAjax.js"></script>
 <script src="./js/SWLG/SWLGSaveWorkLog.js"></script>
+<script src="./js/SWLG/SWLGAuthority.js"></script>
 </body>
 </html>
