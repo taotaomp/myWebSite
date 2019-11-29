@@ -10,7 +10,7 @@ $(document).ready(function(){
         newWorkActionType.attr("class","col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-sm-2 col-md-2 col-lg-2");
         var newSelectT = $("<select></select>");
         newSelectT.attr("class","workActionType form-control");
-        $.getJSON("http://localhost:8080/SimpleWorkLogGenerator/workActionTypes?callback=?",function(result){
+        $.getJSON("http://localhost:8080/SimpleWorkLogGenerator_war/workActionTypes?callback=?",function(result){
         		$.each(result,function(i,filed){
         		var newOption = $("<option></option>");
         		newOption.attr("value",filed.workActionTypeId);
@@ -36,7 +36,7 @@ $(document).ready(function(){
         newWorkActionObject.attr("class","col-sm-2 col-md-2 col-lg-2");
         var newSelectO = $("<select></select>");
         newSelectO.attr("class","workActionObject form-control");
-        $.getJSON("http://localhost:8080/SimpleWorkLogGenerator/workActionObjects?callback=?",function(result){
+        $.getJSON("http://localhost:8080/SimpleWorkLogGenerator_war/workActionObjects?callback=?",function(result){
         		$.each(result,function(i,filed){
         		var newOption = $("<option></option>");
         		newOption.attr("value",filed.workActionObjectId);

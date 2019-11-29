@@ -2,7 +2,7 @@ $(document).ready(function(){
     //日期
     var date = new Date();
     var year=date.getFullYear();
-    var month=date.getMonth();
+    var month=date.getMonth()+1;
     var day=date.getDate();
     $("#currentDate").val(year+"-"+month+"-"+day);
     

@@ -19,7 +19,7 @@ $(document).ready(function(){
 		
 		console.log(jsonStr);
 		$.ajax({
-			url: "http://localhost:8080/SimpleWorkLogGenerator:8080/SimpleWorkLogGenerator/workLog",
+			url: "http://localhost:8080/SimpleWorkLogGenerator_war/workLog",
 			data: jsonStr,
 			type: "POST",
 			// dataType : "jsonp", // 返回的数据类型，设置为JSONP方式

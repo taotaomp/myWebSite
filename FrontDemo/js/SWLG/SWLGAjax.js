@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$.getJSON("http://localhost:8080/SimpleWorkLogGenerator/workTypes?callback=?",function(result){
+	$.getJSON("http://localhost:8080/SimpleWorkLogGenerator_war/workTypes?callback=?",function(result){
 			$.each(result,function(i,filed){
 			var newOption = $("<option></option>");
 			newOption.attr("value",filed.workTypeId);
@@ -8,7 +8,7 @@ $(document).ready(function(){
 		});
 	});
 	
-	$.getJSON("http://localhost:8080/SimpleWorkLogGenerator/workUnits?callback=?",function(result){
+	$.getJSON("http://localhost:8080/SimpleWorkLogGenerator_war/workUnits?callback=?",function(result){
 			$.each(result,function(i,filed){
 			var newOption = $("<option></option>");
 			newOption.attr("value",filed.workUnitId);
@@ -18,7 +18,7 @@ $(document).ready(function(){
 	});
 	
 	
-	$.getJSON("http://localhost:8080/SimpleWorkLogGenerator/workActionTypes?callback=?",function(result){
+	$.getJSON("http://localhost:8080/SimpleWorkLogGenerator_war/workActionTypes?callback=?",function(result){
 			$.each(result,function(i,filed){
 			var newOption = $("<option></option>");
 			newOption.attr("value",filed.workActionTypeId);
@@ -27,7 +27,7 @@ $(document).ready(function(){
 		});
 	});
 	
-	$.getJSON("http://localhost:8080/SimpleWorkLogGenerator/workActionObjects?callback=?",function(result){
+	$.getJSON("http://localhost:8080/SimpleWorkLogGenerator_war/workActionObjects?callback=?",function(result){
 			$.each(result,function(i,filed){
 			var newOption = $("<option></option>");
 			newOption.attr("value",filed.workActionObjectId);
