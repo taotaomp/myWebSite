@@ -13,7 +13,7 @@ $(document).ready(function(){
 		workUnitValue.workUnitId = $("#workUnit").find("option:selected").val();
 		workUnitValue.workUnitName = $("#workUnit").find("option:selected").html();
 		jsonRow.workUnit = workUnitValue;
-		jsonRow.workLogItems = $("#workLogItems").text();
+		jsonRow.workLogItems = $("#workLogItems").html();
 		//将json对象转换为json字符串
 		var jsonStr = JSON.stringify(jsonRow);
 		
