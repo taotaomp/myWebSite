@@ -13,7 +13,7 @@
                 text-align: center;
             }
             #high{
-                height: 200px;
+                height: 150px;
             }
             #app{
                 opacity: 91%;
@@ -76,8 +76,9 @@
                         <h3>没用的计数器~<small>（逃</small></h3>
                     </div>
                     <div class="jumbotron">
-                        <p ></p><h1 v-text="message"></h1>
+                        <h1 v-text="message"></h1>
                     </div>
+                    <span>{{ lastChangeTime() }}</span>
                     <hr>
                     <div class="btn-group" role="group" aria-label="...">
                         <button v-on:click="changeValue" class="btn btn-success">
@@ -107,21 +108,31 @@
             el:'#app',
             data: {
                 message:0,
-                defaultValue:""
+                defaultValue:"",
+                
             },
             methods: {
                 changeValue:function(){
                     this.message = parseInt(this.message)+1;
+                    this.lastChangeTime();
                 },
                 changeValue2:function(){
                     this.message = parseInt(this.message)-1;
+                    this.lastChangeTime();
                 },
                 changeValue3:function(){
                     this.message = 0;
+                    this.lastChangeTime();
                 },
                 changeValue4:function(){
                     this.message = this.defaultValue;
                     this.defaultValue = "";
+                    this.lastChangeTime();
+                },
+                lastChangeTime(){
+                    let date =  new Date;
+                    let str = '上次改变时间：'
+                    return str + date.getHours()+":"+date.getMinutes()+":"+date.getMilliseconds();
                 }
             },
         })
